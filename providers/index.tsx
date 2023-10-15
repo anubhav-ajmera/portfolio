@@ -8,7 +8,7 @@ const themes = { light: 'light', dark: 'dark' }
 
 export function Providers(props: PropsWithChildren) {
 	return (
-		<NextThemeProvider attribute={'class'} defaultTheme={'light'} value={themes}>
+		<NextThemeProvider attribute={'class'} defaultTheme={'dark'} value={themes}>
 			<ThemeProvider>{props.children}</ThemeProvider>
 		</NextThemeProvider>
 	)

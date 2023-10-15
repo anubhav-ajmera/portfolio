@@ -11,17 +11,17 @@ const defaultContextState: ThemeContextValue = {
 	isDark: true,
 }
 
-const ThemeContext = createContext<ThemeContextValue>(defaultContextState)
+const ThemeContext = createContext<ThemeContextValue>(defaultContextState);
 
 export const ThemeProvider = (props: PropsWithChildren) => {
 	const { theme, resolvedTheme, setTheme } = useNextTheme()
 
-	const actualTheme = useMemo(() => resolvedTheme || theme, [resolvedTheme, theme])
+	const actualTheme = useMemo(() => resolvedTheme || theme, [resolvedTheme, theme]);
 
 	const themeContextValue: ThemeContextValue = {
 		isDark: actualTheme === 'dark',
 		toggleTheme: () => {
-			setTheme(actualTheme === 'dark' ? 'dark' : 'light')
+			setTheme(actualTheme === 'dark' ? 'light' : 'dark')
 		},
 	}
 
