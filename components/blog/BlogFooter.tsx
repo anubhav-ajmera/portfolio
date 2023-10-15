@@ -44,7 +44,7 @@ const BlogFooter = ({ blog }: BlogFooterProps) => {
 					</Text>
 				</Button>
 
-				<Button
+				{/* <Button
 					height='h-[42px]'
 					width='w-fit'
 					focusOutlined
@@ -64,7 +64,7 @@ const BlogFooter = ({ blog }: BlogFooterProps) => {
 					>
 						Edit on Github
 					</Text>
-				</Button>
+				</Button> */}
 			</div>
 
 			<Reactions blog={blog} />

@@ -38,8 +38,8 @@ export const Blog = defineDocumentType(() => ({
 				dateModified: doc.publishedAt,
 				description: doc.description,
 				color: doc.color,
-				// image: doc.image ? `https://shubhdeep-chhabra.vercel.app${doc.image}` : `https://shubhdeep-chhabra.vercel.app/api/og?title=${doc.title}`,
-				url: `https://shubhdeep-chhabra.vercel.app/blog/${doc._raw.flattenedPath}`,
+				// image: doc.image ? `https://www.anubhavajmera.com${doc.image}` : `https://www.anubhavajmera.com/api/og?title=${doc.title}`,
+				url: `https://www.anubhavajmera.com/blog/${doc._raw.flattenedPath}`,
 				author: {
 					'@type': 'Person',
 					name: 'Anubhav Ajmera',
