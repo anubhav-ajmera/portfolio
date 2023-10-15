@@ -21,7 +21,7 @@ export const ThemeProvider = (props: PropsWithChildren) => {
 	const themeContextValue: ThemeContextValue = {
 		isDark: actualTheme === 'dark',
 		toggleTheme: () => {
-			setTheme(actualTheme === 'dark' ? 'light' : 'dark')
+			setTheme(actualTheme === 'dark' ? 'dark' : 'light')
 		},
 	}
 
