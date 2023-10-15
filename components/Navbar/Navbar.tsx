@@ -17,10 +17,10 @@ import Link from 'next/link'
 import Loader from '../Loader'
 
 const Navbar = () => {
-	const pathname = usePathname()
-	const isMounted = useIsMounted()
-	const [navbarExpanded, setNavbarExpanded] = useState(false)
-	const { isDark, toggleTheme } = useTheme()
+	const pathname = usePathname();
+	const isMounted = useIsMounted();
+	const [navbarExpanded, setNavbarExpanded] = useState(false);
+	const { isDark, toggleTheme } = useTheme();
 
 	const NAVBAR_ITEMS = [
 		{

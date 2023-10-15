@@ -51,16 +51,7 @@ const Footer = () => {
 			gFrom: 'from-blue-500',
 			gTo: 'to-green-500',
 			underline: 'hocus:decoration-blue-500',
-		},
-		{
-			key: 'Source',
-			title: 'Source',
-			route: 'https://github.com/anubhavajmera',
-			gradient: true,
-			gFrom: 'from-[#c86827]',
-			gTo: 'to-[#c69227]',
-			underline: 'hocus:decoration-[#c86827]',
-		},
+		}
 	]
 
 	const DONATE_SOURCES = [
@@ -169,9 +160,20 @@ const Footer = () => {
 					onClick={() => router.push('/')}
 				>
 					<span className='block relative min-w-[32px] w-[32px] h-[32px] [&>*]:absolute [&>*]:top-1/2 [&>*]:left-0 [&>*]:transform [&>*]:-translate-y-1/2 [&>*]:transition'>
-						<SCIcon
+						{/* <SCIcon
 							width={24}
 							height={24}
+							className='
+							opacity-100 scale-100 visible
+							group-hocus:opacity-0 group-hocus:scale-0 group-hocus:invisible
+							transform transition
+							'
+						/> */}
+						<Image
+							src='/assets/anubhav-avatar.png'
+							height={24}
+							width={24}
+							alt='anubhav-avatar'
 							className='
 							opacity-100 scale-100 visible
 							group-hocus:opacity-0 group-hocus:scale-0 group-hocus:invisible
