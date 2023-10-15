@@ -1,10 +1,10 @@
-import { allBlogs } from 'contentlayer/generated'
-import { useMDXComponent } from 'next-contentlayer/hooks'
-import { notFound } from 'next/navigation'
-import BlogFooter from '@/components/blog/BlogFooter'
-import Hero from '@/components/blog/Hero'
-import BlogImages from '@/components/blog/BlogImages'
-import { Metadata } from 'next'
+import { allBlogs } from 'contentlayer/generated';
+import { useMDXComponent } from 'next-contentlayer/hooks';
+import { notFound } from 'next/navigation';
+import BlogFooter from '@/components/blog/BlogFooter';
+import Hero from '@/components/blog/Hero';
+import BlogImages from '@/components/blog/BlogImages';
+import { Metadata } from 'next';
 
 export async function generateStaticParams() {
 	return allBlogs.map((blog) => ({
@@ -58,11 +58,11 @@ const components = {
 	Image: BlogImages,
 }
 export default function Page({ params }: { params: { slug: string } }) {
-	const blog = allBlogs.find((blog) => blog.slug === params.slug)
+	const blog = allBlogs.find((blog) => blog.slug === params.slug);
 
-	if (!blog) notFound()
+	if (!blog) notFound();
 
-	const MDXContent = useMDXComponent(blog.body.code)
+	const MDXContent = useMDXComponent(blog.body.code);
 
 	return (
 		<section className='flex flex-col items-start gap-8'>
@@ -77,5 +77,5 @@ export default function Page({ params }: { params: { slug: string } }) {
 
 			<BlogFooter blog={blog} />
 		</section>
-	)
+	);
 }

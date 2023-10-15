@@ -1,7 +1,7 @@
-import Text from '@/components/Text'
-import BlogList from '@/components/blog/BlogList'
-import { allBlogs, Blog } from 'contentlayer/generated'
-import { getBlogGroups } from './utils'
+import Text from '@/components/Text';
+import BlogList from '@/components/blog/BlogList';
+import { allBlogs, Blog } from 'contentlayer/generated';
+import { getBlogGroups } from './utils';
 
 export default function Blogs() {
 	return (
@@ -20,5 +20,5 @@ export default function Blogs() {
 				<BlogList key={group.year} blogList={group} />
 			))}
 		</div>
-	)
+	);
 }

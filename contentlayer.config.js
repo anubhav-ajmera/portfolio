@@ -1,12 +1,12 @@
-import { defineDocumentType, makeSource } from 'contentlayer/source-files'
-import readingTime from 'reading-time'
-import remarkGfm from 'remark-gfm'
-import rehypeSlug from 'rehype-slug'
-import rehypeAutolinkHeadings from 'rehype-autolink-headings'
+import { defineDocumentType, makeSource } from 'contentlayer/source-files';
+import readingTime from 'reading-time';
+import remarkGfm from 'remark-gfm';
+import rehypeSlug from 'rehype-slug';
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 
-import { rehypeAccessibleEmojis } from 'rehype-accessible-emojis'
-import remarkUnwrapImages from 'remark-unwrap-images'
-import rehypePrettyCode from 'rehype-pretty-code'
+import { rehypeAccessibleEmojis } from 'rehype-accessible-emojis';
+import remarkUnwrapImages from 'remark-unwrap-images';
+import rehypePrettyCode from 'rehype-pretty-code';
 
 export const Blog = defineDocumentType(() => ({
 	name: 'Blog',
