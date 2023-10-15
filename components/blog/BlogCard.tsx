@@ -1,10 +1,10 @@
 'use client'
-import { Blog } from '@/.contentlayer/generated'
-import clsx from 'clsx'
-import Link from 'next/link'
-import Text from '../Text'
-import { CalendarIcon, EyeIcon, TimeIcon } from '@/Icons'
-import { useBlogViews } from '@/hooks/useBlogViews'
+import { Blog } from '@/.contentlayer/generated';
+import clsx from 'clsx';
+import Link from 'next/link';
+import Text from '../Text';
+import { CalendarIcon, EyeIcon, TimeIcon } from '@/Icons';
+// import { useBlogViews } from '@/hooks/useBlogViews';
 
 type BlogCardProps = {
 	blog: Blog
@@ -42,7 +42,7 @@ const COLOR_STYLES: Record<string, Record<string, string>> = {
 }
 
 const BlogCard = ({ blog }: BlogCardProps) => {
-	const { views, isLoading } = useBlogViews(blog.slug)
+	// const { views, isLoading } = useBlogViews(blog.slug);
 	return (
 		<Link
 			href={`/blog/${blog.slug}`}
@@ -88,11 +88,11 @@ const BlogCard = ({ blog }: BlogCardProps) => {
 						<Text className='font-semibold'>{blog.readingTime.text}</Text>
 					</div>
 
-					<div className='flex gap-1 items-center bg-gray-200 dark:bg-gray-600 rounded-md text-xs py-1 px-2'>
+					{/* <div className='flex gap-1 items-center bg-gray-200 dark:bg-gray-600 rounded-md text-xs py-1 px-2'>
 						<EyeIcon width={10} height={10} />
 
 						<Text className='font-semibold'>{isLoading ? '-' : views || 0} views</Text>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</Link>
