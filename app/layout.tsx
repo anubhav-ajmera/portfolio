@@ -7,7 +7,7 @@ import Footer from '@/components/Footer';
 import { BackToTop } from '@/components/BackToTop';
 import { type PropsWithChildren } from 'react';
 import { Metadata } from 'next';
-import { Analytics } from '@vercel/analytics/react';
+// import { Analytics } from '@vercel/analytics/react';
 
 const manrope = Manrope({
 	subsets: ['latin'],
@@ -96,7 +96,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
 					<MainContent>{children}</MainContent>
 					<Footer />
 					<BackToTop />
-					<Analytics />
+					{/* <Analytics /> */}
 				</Providers>
 			</body>
 		</html>
