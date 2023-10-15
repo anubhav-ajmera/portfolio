@@ -7,7 +7,7 @@ import Reactions from './Reactions'
 import { Blog } from '@/.contentlayer/generated'
 import Button from '../Button'
 import Link from 'next/link'
-import { useBlogViews } from '@/hooks/useBlogViews'
+// import { useBlogViews } from '@/hooks/useBlogViews';
 import AnimatedImage from '../AnimatedImage'
 
 type HeroProps = {
@@ -15,11 +15,11 @@ type HeroProps = {
 }
 
 const Hero = ({ blog }: HeroProps) => {
-	const { views, isLoading, increment } = useBlogViews(blog.slug)
+	// const { views, isLoading, increment } = useBlogViews(blog.slug);
 
-	useEffect(() => {
-		increment()
-	}, [])
+	// useEffect(() => {
+	// 	increment()
+	// }, []);
 
 	return (
 		<>
@@ -62,11 +62,11 @@ const Hero = ({ blog }: HeroProps) => {
 					<Text className='text-sm'>{blog.readingTime.text}</Text>
 				</div>
 
-				<div className='flex gap-1 items-center bg-opacity-50 bg-slate-200 dark:bg-slate-600 rounded-md text-xs py-1 px-2'>
+				{/* <div className='flex gap-1 items-center bg-opacity-50 bg-slate-200 dark:bg-slate-600 rounded-md text-xs py-1 px-2'>
 					<EyeIcon width={15} height={15} />
 
 					<Text className='text-sm'>{isLoading ? '-' : views} views</Text>
-				</div>
+				</div> */}
 			</div>
 
 			<Reactions blog={blog} />
