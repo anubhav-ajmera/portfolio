@@ -84,7 +84,7 @@ export const INTERNSHIPS: ExperienceProps[] = [
 		role: 'Flutter Developer',
 		company: 'Docs2Meds',
 		website: 'https://www.docs2meds.com/',
-		location: 'Bhilwara, Rajasthan (Remote)',
+		location: 'Bhilwara (Remote)',
 		timeline: 'Mar 2021 - May 2021',
 		description: [
 			'Built an app for doctors with enhanced appointment bookings and data storage system, reducing efforts by 40%.',
@@ -98,7 +98,7 @@ export const INTERNSHIPS: ExperienceProps[] = [
 		role: 'Application Development Manager',
 		company: 'Cograd',
 		website: 'https://cograd.in/',
-		location: 'Bhilwara, Rajasthan (Remote)',
+		location: 'Bhilwara (Remote)',
 		timeline: 'Apr 2020 - Apr 2021',
 		description: [
 			'Directed a team of 4 developers to create a counseling app for JEE and NEET aspirants, fostering college student connections.',
@@ -111,7 +111,7 @@ export const INTERNSHIPS: ExperienceProps[] = [
 		role: 'Product Development Manager',
 		company: 'Presto',
 		website: 'http://presto.club/',
-		location: 'Bhilwara, Rajasthan (Remote)',
+		location: 'Bhilwara (Remote)',
 		timeline: 'Jun 2020 - Mar 2021',
 		description: [
 			'Simplified wireframes and user journeys by 50%, eliminating unnecessary steps.',
@@ -154,7 +154,7 @@ export const INTERNSHIPS: ExperienceProps[] = [
 		role: 'Management Intern',
 		company: 'The Dexterity Global Group',
 		website: 'https://www.dexterityglobal.org/',
-		location: 'Bhilwara, Rajasthan (Remote)',
+		location: 'Bhilwara (Remote)',
 		timeline: 'May 2020 - Jun 2020',
 		description: [
 			'Crafted a financial aid model to assess and grant aid to underprivileged students. Devised an outreach plan and reported to senior management.',
