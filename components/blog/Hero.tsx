@@ -69,7 +69,7 @@ const Hero = ({ blog }: HeroProps) => {
 				</div> */}
 			</div>
 
-			<Reactions blog={blog} />
+			{/* <Reactions blog={blog} /> */}
 
 			<AnimatedImage
 				alt={blog.title}
@@ -84,4 +84,4 @@ const Hero = ({ blog }: HeroProps) => {
 	)
 }
 
-export default Hero
+export default Hero;

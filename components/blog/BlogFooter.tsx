@@ -3,7 +3,7 @@ import React from 'react'
 import Button from '../Button'
 import { EditIcon, ShareIcon } from '@/Icons'
 import Text from '../Text'
-import Reactions from './Reactions'
+// import Reactions from './Reactions';
 import { Blog } from '@/.contentlayer/generated'
 
 type BlogFooterProps = {
@@ -25,11 +25,15 @@ const BlogFooter = ({ blog }: BlogFooterProps) => {
 					hoverable={false}
 					onClick={async () => {
 						try {
-							await navigator.share({
-								title: blog.title,
-								text: `"${blog.title}" by @anubhavajmera`,
-								url: `https://www.anubhavajmera.com/blog/${blog.slug}`,
-							})
+							if (navigator.share) {
+								await navigator.share({
+									title: blog.title,
+									text: `"${blog.title}" by @anubhavajmera`,
+									url: `https://www.anubhavajmera.com/blog/${blog.slug}`,
+								})
+							} else {
+								console.log('Sharing is not supported')
+							}
 						} catch (err) {
 							console.log({ err })
 						}
@@ -67,7 +71,7 @@ const BlogFooter = ({ blog }: BlogFooterProps) => {
 				</Button> */}
 			</div>
 
-			<Reactions blog={blog} />
+			{/* <Reactions blog={blog} /> */}
 		</div>
 	)
 }
