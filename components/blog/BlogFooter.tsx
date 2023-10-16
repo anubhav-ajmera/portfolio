@@ -5,6 +5,7 @@ import { EditIcon, ShareIcon } from '@/Icons'
 import Text from '../Text'
 // import Reactions from './Reactions';
 import { Blog } from '@/.contentlayer/generated'
+import { RWebShare } from 'react-web-share'
 
 type BlogFooterProps = {
 	blog: Blog
@@ -17,6 +18,16 @@ const BlogFooter = ({ blog }: BlogFooterProps) => {
 			className='border-t mt-10 pt-10 w-full flex flex-col-reverse laptop:flex-row gap-6 justify-between items-start laptop:items-center'
 		>
 			<div id='actions' className='flex gap-3'>
+				<RWebShare
+					data={{
+						title: blog.title,
+						text: `"${blog.title}" by @anubhavajmera`,
+						url: `https://www.anubhavajmera.com/blog/${blog.slug}`,
+					}}
+					onClick={() => console.log('shared successfully!')}
+				>
+					<button>Share on Web</button>
+				</RWebShare>
 				<Button
 					height='h-[42px]'
 					width='w-fit'
