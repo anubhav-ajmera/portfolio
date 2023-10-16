@@ -1,11 +1,11 @@
-'use client'
-import React from 'react'
-import Button from '../Button'
-import { EditIcon, ShareIcon } from '@/Icons'
-import Text from '../Text'
+'use client';
+import React from 'react';
+import Button from '../Button';
+import { EditIcon, ShareIcon } from '@/Icons';
+import Text from '../Text';
 // import Reactions from './Reactions';
-import { Blog } from '@/.contentlayer/generated'
-import { RWebShare } from 'react-web-share'
+import { Blog } from '@/.contentlayer/generated';
+import { RWebShare } from 'react-web-share';
 
 type BlogFooterProps = {
 	blog: Blog
@@ -24,40 +24,39 @@ const BlogFooter = ({ blog }: BlogFooterProps) => {
 						text: `"${blog.title}" by @anubhavajmera`,
 						url: `https://www.anubhavajmera.com/blog/${blog.slug}`,
 					}}
-					onClick={() => console.log('shared successfully!')}
+					// onClick={() => console.log('shared successfully!')}
 				>
-					<button>Share on Web</button>
-				</RWebShare>
-				<Button
-					height='h-[42px]'
-					width='w-fit'
-					focusOutlined
-					className='p-4 flex gap-1 justify-center items-center rounded-lg bg-blue-700 hover:-translate-y-[1px] hover:shadow-md hover:bg-blue-800  dark:bg-blue-500 dark:hover:bg-blue-400'
-					hoverable={false}
-					onClick={async () => {
-						try {
-							if (navigator.share) {
-								await navigator.share({
-									title: blog.title,
-									text: `"${blog.title}" by @anubhavajmera`,
-									url: `https://www.anubhavajmera.com/blog/${blog.slug}`,
-								})
-							} else {
-								console.log('Sharing is not supported')
-							}
-						} catch (err) {
-							console.log({ err })
-						}
-					}}
-				>
-					<ShareIcon width={24} height={24} color='#fff' className='dark:fill-text-dark transition' />
-					<Text
-						transitioned={false}
-						className='h-full text-white dark:text-text-dark font-extrabold dark:font-bold p-0'
+					<Button
+						height='h-[42px]'
+						width='w-fit'
+						focusOutlined
+						className='p-4 flex gap-1 justify-center items-center rounded-lg bg-blue-700 hover:-translate-y-[1px] hover:shadow-md hover:bg-blue-800  dark:bg-blue-500 dark:hover:bg-blue-400'
+						hoverable={false}
+						// onClick={async () => {
+						// 	try {
+						// 		if (navigator.share) {
+						// 			await navigator.share({
+						// 				title: blog.title,
+						// 				text: `"${blog.title}" by @anubhavajmera`,
+						// 				url: `https://www.anubhavajmera.com/blog/${blog.slug}`,
+						// 			})
+						// 		} else {
+						// 			console.log('Sharing is not supported')
+						// 		}
+						// 	} catch (err) {
+						// 		console.log({ err })
+						// 	}
+						// }}
 					>
-						Share
-					</Text>
-				</Button>
+						<ShareIcon width={24} height={24} color='#fff' className='dark:fill-text-dark transition' />
+						<Text
+							transitioned={false}
+							className='h-full text-white dark:text-text-dark font-extrabold dark:font-bold p-0'
+						>
+							Share
+						</Text>
+					</Button>
+				</RWebShare>
 
 				{/* <Button
 					height='h-[42px]'
