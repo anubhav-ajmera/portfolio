@@ -1,25 +1,31 @@
-'use client'
-import React, { useEffect, useRef } from 'react'
-import { motion, useAnimation } from 'framer-motion'
+'use client';
+import React, { useEffect, useRef } from 'react';
+import { motion, useAnimation } from 'framer-motion';
 import {
-	CSSIcon,
-	ExpressjsIcon,
+	WordpressIcon,
+	FigmaIcon,
+	AdobeXDIcon,
+	CanvaIcon,
+	TrelloIcon,
+	JiraIcon,
 	GitIcon,
-	HTMLIcon,
+	NestJSIcon,
 	IconProps,
-	JavaScriptIcon,
 	MongoDBIcon,
 	NextjsIcon,
 	NodejsIcon,
-	PythonIcon,
+	FlutterIcon,
 	ReactIcon,
-	SemanticUIIcon,
-	StyledComponentsIcon,
 	TailwindIcon,
-	TypeScriptIcon,
+	PythonIcon,
+	VueJSIcon,
+	PHPIcon,
+	FirebaseIcon,
+	SQLIcon,
+	PostgresIcon,
 } from '@/Icons'
-import clsx from 'clsx'
-import Text from '../Text'
+import clsx from 'clsx';
+import Text from '../Text';
 
 type SkillProp = {
 	id: string
@@ -32,35 +38,41 @@ type SkillProp = {
 }
 
 const SKILL_ICONS: Record<string, React.FC<IconProps>> = {
-	react: ReactIcon,
-	nextjs: NextjsIcon,
-	javascript: JavaScriptIcon,
-	typescript: TypeScriptIcon,
-	styledcomponents: StyledComponentsIcon,
-	html: HTMLIcon,
-	css: CSSIcon,
-	tailwind: TailwindIcon,
-	semanticui: SemanticUIIcon,
-	nodejs: NodejsIcon,
-	express: ExpressjsIcon,
-	mongodb: MongoDBIcon,
+	wordpress: WordpressIcon,
+	figma: FigmaIcon,
+	adobexd: AdobeXDIcon,
+	canva: CanvaIcon,
+	trello: TrelloIcon,
+	jira: JiraIcon,
 	git: GitIcon,
+	nestjs: NestJSIcon,
+	nextjs: NextjsIcon,
+	react: ReactIcon,
 	python: PythonIcon,
+	firebase: FirebaseIcon,
+	tailwind: TailwindIcon,
+	nodejs: NodejsIcon,
+	php: PHPIcon,
+	mongodb: MongoDBIcon,
+	flutter: FlutterIcon,
+	vue: VueJSIcon,
+	sql: SQLIcon,
+	postgres: PostgresIcon,
 }
 
 const SKILLS: SkillProp[] = [
 	{
-		id: 'react',
-		title: 'React',
+		id: 'wordpress',
+		title: 'Wordpress',
 		bgColor: 'hocus:bg-[#00c2e61f] dark:hocus:bg-[#00c2e62e]',
 		borderColor: 'border hocus:border-[#00c2e68f] dark:hocus:border-[#00c2e68f]',
-		wIcon: 19,
-		hIcon: 19,
-		position: 'left',
+		wIcon: 15,
+		hIcon: 15,
+		position: 'right',
 	},
 	{
-		id: 'nextjs',
-		title: 'Next.js',
+		id: 'figma',
+		title: 'Figma',
 		bgColor: 'hocus:bg-[#00c2e61f] dark:hocus:bg-[#0070f32e]',
 		borderColor: 'border hocus:border-[#0070f38f] dark:hocus:border-[#0070f38f]',
 		wIcon: 19,
@@ -68,35 +80,8 @@ const SKILLS: SkillProp[] = [
 		position: 'right',
 	},
 	{
-		id: 'javascript',
-		title: 'JavaScript',
-		bgColor: 'hocus:bg-[#f7df1e1f] dark:hocus:bg-[#f7df1e2e]',
-		borderColor: 'border border-grey-100 dark:border-grey-400 hocus:border-[#f7df1e8f] dark:hocus:border-[#f7df1e8f]',
-		wIcon: 15,
-		hIcon: 15,
-		position: 'left',
-	},
-	{
-		id: 'typescript',
-		title: 'TypeScript',
-		bgColor: 'hocus:bg-[#3178c61f] dark:hocus:bg-[#3178c62e]',
-		borderColor: 'border hocus:border-[#3178c68f] dark:hocus:border-[#3178c68f]',
-		wIcon: 19,
-		hIcon: 19,
-		position: 'left',
-	},
-	{
-		id: 'styledcomponents',
-		title: 'Styled Components',
-		bgColor: 'hocus:bg-[#c43bad1f] dark:hocus:bg-[#c43bad2e]',
-		borderColor: 'border hocus:border-[#c43bad8f] dark:hocus:border-[#c43bad8f]',
-		wIcon: 19,
-		hIcon: 19,
-		position: 'right',
-	},
-	{
-		id: 'html',
-		title: 'HTML 5',
+		id: 'adobexd',
+		title: 'Adobe XD',
 		bgColor: 'hocus:bg-[#e349261f] dark:hocus:bg-[#e349262e]',
 		borderColor: 'border hocus:border-[#e349268f] dark:hocus:border-[#e349268f]',
 		wIcon: 19,
@@ -104,8 +89,8 @@ const SKILLS: SkillProp[] = [
 		position: 'left',
 	},
 	{
-		id: 'css',
-		title: 'CSS3',
+		id: 'canva',
+		title: 'Canva',
 		bgColor: 'hocus:bg-[#3572b51f] dark:hocus:bg-[#3572b52e]',
 		borderColor: 'border hocus:border-[#3572b58f] dark:hocus:border-[#3572b58f]',
 		wIcon: 19,
@@ -113,46 +98,19 @@ const SKILLS: SkillProp[] = [
 		position: 'left',
 	},
 	{
-		id: 'tailwind',
-		title: 'Tailwind CSS',
-		bgColor: 'hocus:bg-[#38bdf81f] dark:hocus:bg-[#38bdf82e]',
-		borderColor: 'border hocus:border-[#38bdf88f] dark:hocus:border-[#38bdf88f]',
+		id: 'trello',
+		title: 'Trello',
+		bgColor: 'hocus:bg-[#c43bad1f] dark:hocus:bg-[#c43bad2e]',
+		borderColor: 'border hocus:border-[#c43bad8f] dark:hocus:border-[#c43bad8f]',
 		wIcon: 19,
 		hIcon: 19,
 		position: 'right',
 	},
 	{
-		id: 'semanticui',
-		title: 'Semantic UI',
-		bgColor: 'hocus:bg-[#00c2e61f] dark:hocus:bg-[#00c2e62e]',
-		borderColor: 'border hocus:border-[#00c2e68f] dark:hocus:border-[#00c2e68f]',
-		wIcon: 19,
-		hIcon: 19,
-		position: 'right',
-	},
-	{
-		id: 'nodejs',
-		title: 'Node.js',
-		bgColor: 'hocus:bg-[#38bdf81f] dark:hocus:bg-[#38bdf82e]',
-		borderColor: 'border hocus:border-[#38bdf88f] dark:hocus:border-[#38bdf88f]',
-		wIcon: 19,
-		hIcon: 19,
-		position: 'right',
-	},
-	{
-		id: 'express',
-		title: 'Express',
-		bgColor: 'hocus:bg-[#8888881f] dark:hocus:bg-[#8888882e]',
-		borderColor: 'border hocus:border-[#8888888f] dark:hocus:border-[#8888888f]',
-		wIcon: 19,
-		hIcon: 19,
-		position: 'left',
-	},
-	{
-		id: 'mongodb',
-		title: 'MongoDB',
-		bgColor: 'hocus:bg-[#69a14a1f] dark:hocus:bg-[#69a14a2e]',
-		borderColor: 'border hocus:border-[#69a14a8f] dark:hocus:border-[#69a14a8f]',
+		id: 'jira',
+		title: 'Jira',
+		bgColor: 'hocus:bg-[#3178c61f] dark:hocus:bg-[#3178c62e]',
+		borderColor: 'border hocus:border-[#3178c68f] dark:hocus:border-[#3178c68f]',
 		wIcon: 19,
 		hIcon: 19,
 		position: 'left',
@@ -167,19 +125,127 @@ const SKILLS: SkillProp[] = [
 		position: 'left',
 	},
 	{
-		id: 'python',
-		title: 'Python',
+		id: 'react',
+		title: 'React',
+		bgColor: 'hocus:bg-[#00c2e61f] dark:hocus:bg-[#00c2e62e]',
+		borderColor: 'border hocus:border-[#00c2e68f] dark:hocus:border-[#00c2e68f]',
+		wIcon: 19,
+		hIcon: 19,
+		position: 'left',
+	},
+	{
+		id: 'nextjs',
+		title: 'NextJS',
+		bgColor: 'hocus:bg-[#00c2e61f] dark:hocus:bg-[#0070f32e]',
+		borderColor: 'border hocus:border-[#0070f38f] dark:hocus:border-[#0070f38f]',
+		wIcon: 19,
+		hIcon: 19,
+		position: 'right',
+	},
+	{
+		id: 'vue',
+		title: 'VueJS',
+		bgColor: 'hocus:bg-[#8888881f] dark:hocus:bg-[#8888882e]',
+		borderColor: 'border hocus:border-[#8888888f] dark:hocus:border-[#8888888f]',
+		wIcon: 19,
+		hIcon: 19,
+		position: 'left',
+	},
+	{
+		id: 'tailwind',
+		title: 'Tailwind CSS',
+		bgColor: 'hocus:bg-[#38bdf81f] dark:hocus:bg-[#38bdf82e]',
+		borderColor: 'border hocus:border-[#38bdf88f] dark:hocus:border-[#38bdf88f]',
+		wIcon: 19,
+		hIcon: 19,
+		position: 'right',
+	},
+	{
+		id: 'nodejs',
+		title: 'NodeJS',
+		bgColor: 'hocus:bg-[#38bdf81f] dark:hocus:bg-[#38bdf82e]',
+		borderColor: 'border hocus:border-[#38bdf88f] dark:hocus:border-[#38bdf88f]',
+		wIcon: 19,
+		hIcon: 19,
+		position: 'right',
+	},
+	{
+		id: 'nestjs',
+		title: 'NestJS',
+		bgColor: 'hocus:bg-[#f7df1e1f] dark:hocus:bg-[#f7df1e2e]',
+		borderColor: 'border border-grey-100 dark:border-grey-400 hocus:border-[#f7df1e8f] dark:hocus:border-[#f7df1e8f]',
+		wIcon: 15,
+		hIcon: 15,
+		position: 'left',
+	},
+	{
+		id: 'php',
+		title: 'PHP',
+		bgColor: 'hocus:bg-[#00c2e61f] dark:hocus:bg-[#00c2e62e]',
+		borderColor: 'border hocus:border-[#00c2e68f] dark:hocus:border-[#00c2e68f]',
+		wIcon: 15,
+		hIcon: 15,
+		position: 'right',
+	},
+	{
+		id: 'flutter',
+		title: 'Flutter',
 		bgColor: 'hocus:bg-[#0077e61f] dark:hocus:bg-[#0077e62e]',
 		borderColor: 'border hocus:border-[#0077e68f] dark:hocus:border-[#0077e68f]',
 		wIcon: 15,
 		hIcon: 15,
 		position: 'right',
 	},
+	{
+		id: 'python',
+		title: 'Python',
+		bgColor: 'hocus:bg-[#00c2e61f] dark:hocus:bg-[#00c2e62e]',
+		borderColor: 'border hocus:border-[#00c2e68f] dark:hocus:border-[#00c2e68f]',
+		wIcon: 15,
+		hIcon: 15,
+		position: 'right',
+	},
+	{
+		id: 'firebase',
+		title: 'Firebase',
+		bgColor: 'hocus:bg-[#00c2e61f] dark:hocus:bg-[#00c2e62e]',
+		borderColor: 'border hocus:border-[#00c2e68f] dark:hocus:border-[#00c2e68f]',
+		wIcon: 15,
+		hIcon: 15,
+		position: 'right',
+	},
+	{
+		id: 'sql',
+		title: 'SQL',
+		bgColor: 'hocus:bg-[#e349261f] dark:hocus:bg-[#e349262e]',
+		borderColor: 'border hocus:border-[#e349268f] dark:hocus:border-[#e349268f]',
+		wIcon: 19,
+		hIcon: 19,
+		position: 'left',
+	},
+	{
+		id: 'postgres',
+		title: 'Postgres',
+		bgColor: 'hocus:bg-[#38bdf81f] dark:hocus:bg-[#38bdf82e]',
+		borderColor: 'border hocus:border-[#38bdf88f] dark:hocus:border-[#38bdf88f]',
+		wIcon: 19,
+		hIcon: 19,
+		position: 'right',
+	},
+	{
+		id: 'mongodb',
+		title: 'MongoDB',
+		bgColor: 'hocus:bg-[#69a14a1f] dark:hocus:bg-[#69a14a2e]',
+		borderColor: 'border hocus:border-[#69a14a8f] dark:hocus:border-[#69a14a8f]',
+		wIcon: 19,
+		hIcon: 19,
+		position: 'left',
+	},
 ]
 
 const Skills = () => {
-	const containerControls = useAnimation()
-	const containerRef = useRef<HTMLDivElement>(null)
+	const containerControls = useAnimation();
+	const containerRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -194,7 +260,7 @@ const Skills = () => {
 		window.addEventListener('scroll', handleScroll)
 		return () => window.removeEventListener('scroll', handleScroll)
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [])
+	}, []);
 
 	const containerVariants = {
 		hidden: { opacity: 0 },
@@ -209,7 +275,7 @@ const Skills = () => {
 	const skillVariants = (isLeft: boolean) => ({
 		hidden: { x: `${isLeft ? '-100%' : '100%'}`, opacity: 0 },
 		visible: { x: 0, opacity: 1 },
-	})
+	});
 
 	return (
 		<div ref={containerRef}>
@@ -250,7 +316,7 @@ const Skills = () => {
 				})}
 			</motion.div>
 		</div>
-	)
+	);
 }
 
-export default Skills
+export default Skills;
