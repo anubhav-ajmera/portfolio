@@ -1,12 +1,12 @@
-'use client'
+'use client';
 
-import Greeting from '../Greeting'
-import Button from '../Button'
-import { ProfileIcon } from '@/Icons'
-import Text from '../Text'
-import SocialButtons from '../SocialButtons'
-import { useRouter } from 'next/navigation'
-import AnimatedImage from '../AnimatedImage'
+import Greeting from '../Greeting';
+import Button from '../Button';
+import { ProfileIcon } from '@/Icons';
+import Text from '../Text';
+import SocialButtons from '../SocialButtons';
+import { useRouter } from 'next/navigation';
+import AnimatedImage from '../AnimatedImage';
 
 const Intro = () => {
 	const router = useRouter();
@@ -51,16 +51,16 @@ const Intro = () => {
 						bordered
 						socials={[
 							{
-								key: 'github',
-								icon: 'github',
-								className: 'group-hocus:fill-black dark:group-hocus:fill-slate-200 dark:fill-slate-400',
-								action: 'https://github.com/anubhavajmera',
-							},
-							{
 								key: 'linkedin',
 								icon: 'linkedin',
 								className: 'group-hocus:fill-blue-600 dark:fill-slate-400',
 								action: 'https://www.linkedin.com/in/anubhavajmera/',
+							},
+							{
+								key: 'instagram',
+								icon: 'instagram',
+								className: 'group-hocus:fill-black dark:group-hocus:fill-slate-200 dark:fill-slate-400',
+								action: 'https://instagram.com/anubhavajmera',
 							},
 							{
 								key: 'twitter',
@@ -69,11 +69,10 @@ const Intro = () => {
 								action: 'https://twitter.com/anubhavajmera',
 							},
 							{
-								key: 'medium',
-								icon: 'medium',
-								className:
-									'group-hocus:fill-black group-hocus:stroke-black dark:group-hocus:fill-slate-200 dark:group-hocus:stroke-slate-200 dark:stroke-slate-400',
-								action: 'https://anubhavajmera.medium.com/',
+								key: 'github',
+								icon: 'github',
+								className: 'group-hocus:fill-black dark:group-hocus:fill-slate-200 dark:fill-slate-400',
+								action: 'https://github.com/anubhavajmera',
 							},
 						]}
 					/>

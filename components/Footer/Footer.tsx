@@ -1,17 +1,17 @@
-'use client';
-import { useState } from 'react';
-import Text from '../Text';
-import Button from '../Button';
-import clsx from 'clsx';
-import { useRouter } from 'next/navigation';
-import SocialButtons from '../SocialButtons';
-import { SCIcon } from '@/Icons';
-import Image from 'next/image';
-import Link from 'next/link';
+'use client'
+import { useState } from 'react'
+import Text from '../Text'
+import Button from '../Button'
+import clsx from 'clsx'
+import { useRouter } from 'next/navigation'
+import SocialButtons from '../SocialButtons'
+import { SCIcon } from '@/Icons'
+import Image from 'next/image'
+import Link from 'next/link'
 
 const Footer = () => {
-	const router = useRouter();
-	const [currentFocussed, setCurrentFocussed] = useState<string>('');
+	const router = useRouter()
+	const [currentFocussed, setCurrentFocussed] = useState<string>('')
 	const NAVBAR_ITEMS = [
 		{
 			key: 'about',
@@ -40,7 +40,7 @@ const Footer = () => {
 			gTo: 'to-[#7a4cbb]',
 			underline: 'hocus:decoration-[#bc2f48]',
 		},
-	];
+	]
 
 	const EXTRA_FOOTER_ITEMS = [
 		{
@@ -51,8 +51,8 @@ const Footer = () => {
 			gFrom: 'from-blue-500',
 			gTo: 'to-green-500',
 			underline: 'hocus:decoration-blue-500',
-		}
-	];
+		},
+	]
 
 	const DONATE_SOURCES = [
 		{
@@ -64,7 +64,7 @@ const Footer = () => {
 			gTo: 'to-orange-500',
 			underline: 'hocus:decoration-yellow-500',
 		},
-	];
+	]
 	return (
 		<footer
 			className='
@@ -199,16 +199,16 @@ const Footer = () => {
 					backToTop
 					socials={[
 						{
-							key: 'github',
-							icon: 'github',
-							className: 'group-hocus:fill-black dark:group-hocus:fill-slate-200 dark:fill-slate-400',
-							action: 'https://github.com/anubhavajmera',
-						},
-						{
 							key: 'linkedin',
 							icon: 'linkedin',
 							className: 'group-hocus:fill-blue-600 dark:fill-slate-400',
 							action: 'https://www.linkedin.com/in/anubhavajmera/',
+						},
+						{
+							key: 'instagram',
+							icon: 'instagram',
+							className: 'group-hocus:fill-black dark:group-hocus:fill-slate-200 dark:fill-slate-400',
+							action: 'https://instagram.com/anubhavajmera',
 						},
 						{
 							key: 'twitter',
@@ -217,16 +217,15 @@ const Footer = () => {
 							action: 'https://twitter.com/anubhavajmera',
 						},
 						{
-							key: 'medium',
-							icon: 'medium',
-							className:
-								'group-hocus:fill-black group-hocus:stroke-black dark:group-hocus:fill-slate-200 dark:group-hocus:stroke-slate-200 dark:stroke-slate-400',
-							action: 'https://anubhavajmera.medium.com/',
+							key: 'github',
+							icon: 'github',
+							className: 'group-hocus:fill-black dark:group-hocus:fill-slate-200 dark:fill-slate-400',
+							action: 'https://github.com/anubhavajmera',
 						},
 					]}
 				/>
 			</div>
 		</footer>
-	);
+	)
 }
-export default Footer;
+export default Footer

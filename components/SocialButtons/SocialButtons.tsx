@@ -1,4 +1,14 @@
-import { EyeIcon, GithubIcon, IconProps, LinkedinIcon, MediumIcon, ProfileIcon, ResumeIcon, TwitterIcon } from '@/Icons'
+import {
+	EyeIcon,
+	GithubIcon,
+	IconProps,
+	LinkedinIcon,
+	MediumIcon,
+	ProfileIcon,
+	ResumeIcon,
+	TwitterIcon,
+	InstagramIcon,
+} from '@/Icons'
 import Button from '../Button'
 import clsx from 'clsx'
 import Link from 'next/link'
@@ -23,6 +33,7 @@ const SOCIAL_ICONS: Record<string, React.FC<IconProps>> = {
 	profile: ProfileIcon,
 	twitter: TwitterIcon,
 	linkedin: LinkedinIcon,
+	instagram: InstagramIcon,
 	medium: MediumIcon,
 	resume: ResumeIcon,
 	eye: EyeIcon,

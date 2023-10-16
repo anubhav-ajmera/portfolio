@@ -35,16 +35,16 @@ const AboutSection = () => {
 					className='px-4'
 					socials={[
 						{
-							key: 'github',
-							icon: 'github',
-							className: 'group-hocus:fill-black dark:group-hocus:fill-slate-200 dark:fill-slate-400',
-							action: 'https://github.com/anubhavajmera',
-						},
-						{
 							key: 'linkedin',
 							icon: 'linkedin',
 							className: 'group-hocus:fill-blue-600 dark:fill-slate-400',
 							action: 'https://www.linkedin.com/in/anubhavajmera/',
+						},
+						{
+							key: 'instagram',
+							icon: 'instagram',
+							className: 'group-hocus:fill-black dark:group-hocus:fill-slate-200 dark:fill-slate-400',
+							action: 'https://instagram.com/anubhavajmera',
 						},
 						{
 							key: 'twitter',
@@ -53,18 +53,17 @@ const AboutSection = () => {
 							action: 'https://twitter.com/anubhavajmera',
 						},
 						{
-							key: 'medium',
-							icon: 'medium',
-							className:
-								'group-hocus:fill-black group-hocus:stroke-black dark:group-hocus:fill-slate-200 dark:group-hocus:stroke-slate-200 dark:stroke-slate-400',
-							action: 'https://anubhavajmera.medium.com/',
+							key: 'github',
+							icon: 'github',
+							className: 'group-hocus:fill-black dark:group-hocus:fill-slate-200 dark:fill-slate-400',
+							action: 'https://github.com/anubhavajmera',
 						},
 					]}
 				/>
 			</div>
 
 			<p className='max-w-none text-left laptop:text-justify text-base font-medium'>
-				👋{"I'm"} <strong>Anubhav Ajmera</strong>, a software engineer from <strong>India</strong>, specializing in web
+				👋 {"I'm"} <strong>Anubhav Ajmera</strong>, a software engineer from <strong>India</strong>, specializing in web
 				development. With a passion for creating things on the web, I <strong>graduated in 2020</strong> and have since
 				dedicated myself to honing my skills. I thrive on challenging projects and enjoy finding innovative solutions to
 				complex problems. Alongside my work, I actively contribute to <strong>Open Source Projects</strong>, embracing
