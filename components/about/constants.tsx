@@ -7,6 +7,7 @@ export type ExperienceProps = {
 	stack: string[]
 	timeline?: string
 }
+
 export const EXPERIENCES: ExperienceProps[] = [
 	{
 		role: 'Software Development Engineer I',
@@ -137,7 +138,7 @@ export const INTERNSHIPS: ExperienceProps[] = [
 		stack: ['React', 'Styled Components', 'Semantic UI'],
 	},
 	{
-		role: 'Web Application Developer',
+		role: 'Web Developer',
 		company: 'Ecom Express Private Limited',
 		website: 'https://ecomexpress.in/',
 		location: 'New Delhi (Remote)',
