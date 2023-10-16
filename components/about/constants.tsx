@@ -12,7 +12,7 @@ export const EXPERIENCES: ExperienceProps[] = [
 		role: 'Software Development Engineer I',
 		company: 'SaaS Labs',
 		website: 'https://www.saaslabs.co/',
-		location: 'Noida, Uttar Pradesh (Remote)',
+		location: 'Noida (Remote)',
 		timeline: 'Jul 2022 - Present',
 		description: [
 			'Enhanced PHP APIs with NestJS, resulting in a 30% reduction in code redundancy with improved code quality and structure.',
@@ -26,7 +26,7 @@ export const EXPERIENCES: ExperienceProps[] = [
 		role: 'App Developer',
 		company: 'Coding Club BITS Pilani',
 		website: 'https://www.facebook.com/codingclubpilani/',
-		location: 'Pilani, Rajasthan',
+		location: 'Pilani',
 		timeline: 'Jun 2019 - Mar 2020',
 		description: [
 			"BOSM'19 Roulette: A Virtual Betting App - An android-based mobile app for college students to bet on sports matches in BOSM'19.",
@@ -39,7 +39,7 @@ export const EXPERIENCES: ExperienceProps[] = [
 		role: 'App Development Team Lead',
 		company: 'Coding Club BITS Pilani',
 		website: 'https://www.facebook.com/codingclubpilani/',
-		location: 'Pilani, Rajasthan',
+		location: 'Pilani',
 		timeline: 'Mar 2020 - May 2021',
 		description: [
 			"Apogee'20: Official AR App for the Annual College Tech Fest - An AR-based android app that allows users to participate in competitions organized at different locations in a gamified way.",
@@ -56,7 +56,7 @@ export const INTERNSHIPS: ExperienceProps[] = [
 		role: 'Product Analyst',
 		company: 'InstaSell',
 		website: 'https://instasell.io/',
-		location: 'Mumbai, Maharashtra (Remote)',
+		location: 'Mumbai (Remote)',
 		timeline: 'Dec 2021 - Jan 2022',
 		description: [
 			'Revamped the app with Amplitude integration, identifying 5 core customer drop-off points, boosting adoption by 30%.',
@@ -70,7 +70,7 @@ export const INTERNSHIPS: ExperienceProps[] = [
 		role: 'Software Engineer',
 		company: 'Everwell Health Solutions',
 		website: 'https://www.everwell.org/',
-		location: 'Bengaluru, Karnataka (Remote)',
+		location: 'Bengaluru (Remote)',
 		timeline: 'Jul 2021 - Dec 2021',
 		description: [
 			'Collaborated on an oxygen auditing platform, recording daily production & distribution, addressing 40% of anticipated barriers.',
@@ -126,7 +126,7 @@ export const INTERNSHIPS: ExperienceProps[] = [
 		role: 'Flutter Developer',
 		company: 'QC4 Application',
 		website: 'https://qc4application.com/',
-		location: 'Bhubaneswar, Odisha (Remote)',
+		location: 'Bhubaneswar (Remote)',
 		timeline: 'Aug 2020 - Oct 2020',
 		description: [
 			'Spearheaded hyperlocal food app, connecting 100+ stores, driving 50k+ revenue in one month, boosting sales and orders.',
@@ -140,7 +140,7 @@ export const INTERNSHIPS: ExperienceProps[] = [
 		role: 'Web Application Developer',
 		company: 'Ecom Express Private Limited',
 		website: 'https://ecomexpress.in/',
-		location: 'New Delhi, Delhi (Remote)',
+		location: 'New Delhi (Remote)',
 		timeline: 'May 2020 - Jun 2020',
 		description: [
 			'Simulation Engine UI - A Django-based web app to optimize truck shipments, finding the most efficient routes.',
@@ -165,7 +165,7 @@ export const INTERNSHIPS: ExperienceProps[] = [
 		role: 'Android Developer',
 		company: 'DaanCorona',
 		website: 'https://www.youtube.com/watch?v=_LRc_lMrmY8',
-		location: 'Pilani, Rajasthan',
+		location: 'Pilani',
 		timeline: 'Mar 2020 - Apr 2020',
 		description: [
 			"A digital platform for college campus-based non-essential medium and small businesses to collect donations from customers, offering redeemable vouchers post-COVID'19.",
