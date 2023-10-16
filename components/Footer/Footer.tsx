@@ -1,17 +1,17 @@
-'use client'
-import { useState } from 'react'
-import Text from '../Text'
-import Button from '../Button'
-import clsx from 'clsx'
-import { useRouter } from 'next/navigation'
-import SocialButtons from '../SocialButtons'
-import { SCIcon } from '@/Icons'
-import Image from 'next/image'
-import Link from 'next/link'
+'use client';
+import { useState } from 'react';
+import Text from '../Text';
+import Button from '../Button';
+import clsx from 'clsx';
+import { useRouter } from 'next/navigation';
+import SocialButtons from '../SocialButtons';
+import { SCIcon } from '@/Icons';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const Footer = () => {
-	const router = useRouter()
-	const [currentFocussed, setCurrentFocussed] = useState<string>('')
+	const router = useRouter();
+	const [currentFocussed, setCurrentFocussed] = useState<string>('');
 	const NAVBAR_ITEMS = [
 		{
 			key: 'about',
@@ -40,7 +40,7 @@ const Footer = () => {
 			gTo: 'to-[#7a4cbb]',
 			underline: 'hocus:decoration-[#bc2f48]',
 		},
-	]
+	];
 
 	const EXTRA_FOOTER_ITEMS = [
 		{
@@ -52,7 +52,7 @@ const Footer = () => {
 			gTo: 'to-green-500',
 			underline: 'hocus:decoration-blue-500',
 		}
-	]
+	];
 
 	const DONATE_SOURCES = [
 		{
@@ -64,12 +64,12 @@ const Footer = () => {
 			gTo: 'to-orange-500',
 			underline: 'hocus:decoration-yellow-500',
 		},
-	]
+	];
 	return (
 		<footer
 			className='
 				w-full max-w-laptop mx-auto
-				flex flex-col gap-9 py-9 px-2 border-t bottom-0'
+				flex flex-col gap-9 py-9 px-6 laptop:px-2 border-t bottom-0'
 		>
 			<div className='flex gap-9'>
 				<ul className='flex flex-col min-w-[100px] laptop:min-w-[140px] gap-4 items-start'>
@@ -227,6 +227,6 @@ const Footer = () => {
 				/>
 			</div>
 		</footer>
-	)
+	);
 }
-export default Footer
+export default Footer;

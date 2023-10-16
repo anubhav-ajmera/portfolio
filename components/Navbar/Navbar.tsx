@@ -1,20 +1,20 @@
 'use client'
 
-import { useState } from 'react'
-import { usePathname } from 'next/navigation'
-import clsx from 'clsx'
-import { RxHamburgerMenu, RxCross2 } from 'react-icons/rx'
-import { IoMoon, IoSunny } from 'react-icons/io5'
+import { useState } from 'react';
+import { usePathname } from 'next/navigation';
+import clsx from 'clsx';
+import { RxHamburgerMenu, RxCross2 } from 'react-icons/rx';
+import { IoMoon, IoSunny } from 'react-icons/io5';
 
-import { useTheme } from '@/providers/theme-provider'
+import { useTheme } from '@/providers/theme-provider';
 
-import Button from '../Button'
-import Text from '../Text'
-import { useIsMounted } from '@/hooks/isMounted'
-import Image from 'next/image'
-import { SCIcon } from '@/Icons'
-import Link from 'next/link'
-import Loader from '../Loader'
+import Button from '../Button';
+import Text from '../Text';
+import { useIsMounted } from '@/hooks/isMounted';
+import Image from 'next/image';
+import { SCIcon } from '@/Icons';
+import Link from 'next/link';
+import Loader from '../Loader';
 
 const Navbar = () => {
 	const pathname = usePathname();
@@ -47,7 +47,7 @@ const Navbar = () => {
 			gTo: 'to-[#7a4cbb]',
 			active: pathname?.startsWith('/blog'),
 		},
-	]
+	];
 
 	return (
 		<nav
@@ -211,7 +211,7 @@ const Navbar = () => {
 				</ul>
 			</section>
 		</nav>
-	)
+	);
 }
 
-export default Navbar
+export default Navbar;

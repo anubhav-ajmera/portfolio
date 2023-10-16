@@ -13,7 +13,8 @@ export default function MainContent({ children }: MainProps) {
 			pt-[110px]
 			pb-10
 			overflow-x-hidden
-			px-2
+			px-6
+			laptop:px-2
   '
 		>
 			{children}
