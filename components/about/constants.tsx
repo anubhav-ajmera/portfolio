@@ -37,7 +37,7 @@ export const EXPERIENCES: ExperienceProps[] = [
 		stack: ['React', 'Styled Components', 'Semantic UI'],
 	},
 	{
-		role: 'App Development Team Lead',
+		role: 'App Dev Team Lead',
 		company: 'Coding Club BITS Pilani',
 		website: 'https://www.facebook.com/codingclubpilani/',
 		location: 'Pilani',
@@ -153,7 +153,7 @@ export const INTERNSHIPS: ExperienceProps[] = [
 	},
 	{
 		role: 'Management Intern',
-		company: 'The Dexterity Global Group',
+		company: 'Dexterity Global Group',
 		website: 'https://www.dexterityglobal.org/',
 		location: 'Bhilwara (Remote)',
 		timeline: 'May 2020 - Jun 2020',
