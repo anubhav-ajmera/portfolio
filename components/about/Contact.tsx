@@ -46,7 +46,7 @@ const Contact = () => {
 								transitioned={false}
 								className='h-full dark:text-white text-text-dark font-extrabold dark:font-bold p-0'
 							>
-								Twitter
+								LinkedIn
 							</Text>
 						</Button>
 						<Button
