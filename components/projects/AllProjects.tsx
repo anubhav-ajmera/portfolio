@@ -1,12 +1,12 @@
-'use client';
+'use client'
 
-import Text from '../Text';
-import Button from '../Button';
-import { ResumeIcon } from '@/Icons';
-import Link from 'next/link';
-import clsx from 'clsx';
-import Image from 'next/image';
-import { PROJECTS, ProjectProps } from '../home/constants';
+import Text from '../Text'
+import Button from '../Button'
+import { ResumeIcon } from '@/Icons'
+import Link from 'next/link'
+import clsx from 'clsx'
+import Image from 'next/image'
+import { PROJECTS, ProjectProps } from '../home/constants'
 
 const AllProjects = () => {
 	return (
