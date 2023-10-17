@@ -1,6 +1,6 @@
 'use client'
 
-import { EmailIcon, TwitterIcon } from '@/Icons'
+import { EmailIcon, LinkedinIcon } from '@/Icons'
 import Button from '../Button'
 import Text from '../Text'
 import Image from 'next/image'
@@ -34,13 +34,13 @@ const Contact = () => {
 							 hocus:bg-sky-100 dark:hocus:bg-sky-800 dark:hocus:bg-opacity-10
 							 border border-slate-200 hocus:border-sky-800 dark:border-slate-800 dark:hover:border-sky-200'
 							hoverable={false}
-							onClick={() => window.open('https://twitter.com/anubhavajmera', '_blank')}
+							onClick={() => window.open('https://linkedin.com/in/anubhavajmera', '_blank')}
 						>
-							<TwitterIcon
+							<LinkedinIcon
 								width={24}
 								height={24}
 								color='#5f5f5f'
-								className='group-hocus:fill-sky-500 dark:fill-slate-400 transition'
+								className='group-hocus:fill-sky-700 dark:fill-slate-400 transition'
 							/>
 							<Text
 								transitioned={false}
@@ -58,7 +58,7 @@ const Contact = () => {
 							 hocus:bg-red-100 dark:hocus:bg-red-700 dark:hocus:bg-opacity-10
 							 border border-slate-200 hocus:border-red-800 dark:border-slate-800 dark:hover:border-red-200'
 							hoverable={false}
-							onClick={() => window.open('mailto:anubhavajmera123@gmail.com')}
+							onClick={() => window.open('mailto:work@anubhavajmera.com')}
 						>
 							<EmailIcon
 								width={24}
