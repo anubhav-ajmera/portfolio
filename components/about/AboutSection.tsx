@@ -62,14 +62,63 @@ const AboutSection = () => {
 				/>
 			</div>
 
-			<p className='max-w-none text-left laptop:text-justify text-base font-medium'>
-				👋 {"I'm"} <strong>Anubhav Ajmera</strong>, a software engineer from <strong>India</strong>, specializing in web
-				development. With a passion for creating things on the web, I <strong>graduated in 2020</strong> and have since
-				dedicated myself to honing my skills. I thrive on challenging projects and enjoy finding innovative solutions to
-				complex problems. Alongside my work, I actively contribute to <strong>Open Source Projects</strong>, embracing
-				the collaborative nature of the tech community. With strong <strong>problem-solving abilities</strong> and
-				attention to detail, I strive to deliver high-quality, user-friendly solutions.
-			</p>
+			<div className='max-w-none text-left laptop:text-justify text-base font-medium'>
+				<p>
+					👋 {"I'm"} Anubhav Ajmera, and {"I'm"} currently working as a software engineer at SaaS Labs. While my
+					academic background may be in Mechanical Engineering, my true passion lies in creating user-centric and
+					visually stunning digital experiences.
+				</p>
+				<br />
+				<p>
+					Throughout my journey, {"I've"} had the incredible opportunity to collaborate with clients across a wide range
+					of industries, including technology startups, e-commerce, and education. Together, {"we've"} not only crafted
+					exceptional digital experiences but also established strong client relationships, increased revenue, and
+					delivered unforgettable user experiences.
+				</p>
+				<br />
+				<p>
+					But {"it's"} not just business for me; {"I'm"} equally enthusiastic about helping individuals shine in the
+					digital world. I offer a wide array of services, from website design and development to SEO and digital
+					marketing.
+				</p>
+				<br />
+				<p>
+					In addition to my work at SaaS Labs, {"I'm"} also a freelance professional, always on the lookout for exciting
+					projects to sink my teeth into. If {"you're"} interested in collaborating, brainstorming, and creating
+					remarkable user experiences, {"don't"} hesitate to drop me an email! 🛠️
+				</p>
+				<br />
+				<p>
+					As a self-taught developer and designer, I bring a unique blend of technical prowess and creative flair to the
+					table. My mission is to empower your business with cutting-edge digital strategies and solutions. {"Here's"} a
+					glimpse of what I can bring to the table:
+				</p>
+				<br />
+				<ul>
+					<li>
+						🧑‍💻 <strong>Cutting-Edge Development -</strong> Crafting clean and efficient code to build robust digital
+						products that align perfectly with your business goals.
+					</li>
+					<li>
+						🎨 <strong>Engaging Web Design -</strong> Designing visually stunning websites that captivate your audience
+						and leave a lasting impression.
+					</li>
+					<li>
+						⚙️ <strong>SEO Mastery -</strong> Maximizing your online visibility and reach through effective SEO
+						techniques.
+					</li>
+					<li>
+						💼 <strong>Entrepreneurial Insights -</strong> Exploring opportunities to take your business to new heights
+						by leveraging the full potential of digital platforms.
+					</li>
+					<li>
+						💰 <strong>Financial Optimization -</strong> Navigating the world of personal finance to ensure efficient
+						budget allocation for your digital endeavors.
+					</li>
+				</ul>
+				<br />
+				<p>Feel free to reach out, and {"let's"} make your digital dreams a reality! 🚀</p>
+			</div>
 		</section>
 	)
 }
