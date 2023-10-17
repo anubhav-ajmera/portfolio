@@ -49,7 +49,7 @@ export const PROJECTS: ProjectProps[] = [
 		titleStyles: 'dark:group-hocus:text-blue-400 group-hocus:text-blue-800',
 		href: 'https://induxray.com/',
 		src: 'https://induxray.com/wp-content/uploads/2023/09/cropped-induxray-full-logo.png',
-		featured: true,
+		featured: false,
 	},
 	{
 		key: 'amazon',
@@ -62,7 +62,7 @@ export const PROJECTS: ProjectProps[] = [
 		titleStyles: 'dark:group-hocus:text-yellow-400 group-hocus:text-yellow-800',
 		href: 'https://agitated-noether-feb56f.netlify.app/',
 		src: 'https://pngimg.com/uploads/amazon/amazon_PNG11.png',
-		featured: true,
+		featured: false,
 	},
 	{
 		key: 'netflix',
@@ -75,7 +75,7 @@ export const PROJECTS: ProjectProps[] = [
 		titleStyles: 'dark:group-hocus:text-red-400 group-hocus:text-red-800',
 		href: 'https://nostalgic-lewin-7fded5.netlify.app/',
 		src: 'https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png',
-		featured: true,
+		featured: false,
 	},
 	{
 		key: 'chat-app-ui-design',
@@ -88,7 +88,7 @@ export const PROJECTS: ProjectProps[] = [
 		titleStyles: 'dark:group-hocus:text-blue-400 group-hocus:text-blue-800',
 		href: 'https://www.instagram.com/p/Cnb2s1rh7LG/',
 		src: 'https://mir-s3-cdn-cf.behance.net/projects/808/34133b134136825.Y3JvcCwxMjIwLDk1NCwxMDgsMA.jpg',
-		featured: true,
+		featured: false,
 	},
 	{
 		key: 'portfolio-website-ui-design',
@@ -101,7 +101,7 @@ export const PROJECTS: ProjectProps[] = [
 		titleStyles: 'dark:group-hocus:text-orange-400 group-hocus:text-orange-800',
 		href: 'https://www.instagram.com/p/CneWj-HBlwT',
 		src: 'https://mir-s3-cdn-cf.behance.net/projects/808/a75805134136257.Y3JvcCw4OTEsNjk3LDEzOSww.png',
-		featured: true,
+		featured: false,
 	},
 	{
 		key: 'simplified-ecommerce-ui-design',
