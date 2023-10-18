@@ -1,39 +1,44 @@
-import Navbar from '@/components/Navbar/Navbar';
-import { Manrope } from 'next/font/google';
-import MainContent from '@/components/MainContent';
-import './globals.css';
-import { Providers } from '@/providers';
-import Footer from '@/components/Footer';
-import { BackToTop } from '@/components/BackToTop';
-import { type PropsWithChildren } from 'react';
-import { Metadata } from 'next';
+import Navbar from '@/components/Navbar/Navbar'
+import { Manrope } from 'next/font/google'
+import MainContent from '@/components/MainContent'
+import './globals.css'
+import { Providers } from '@/providers'
+import Footer from '@/components/Footer'
+import { BackToTop } from '@/components/BackToTop'
+import { type PropsWithChildren } from 'react'
+import { Metadata } from 'next'
 // import { Analytics } from '@vercel/analytics/react';
 
 const manrope = Manrope({
 	subsets: ['latin'],
 	variable: '--font-man',
-});
+})
 
 export const metadata: Metadata = {
 	title: 'Anubhav Ajmera - Software Engineer @ SaaS Labs | Product Enthusiast',
 	description:
-		'Software Engineer from India specializing in web development. Passionate about creating innovative solutions for complex problems. Explore my portfolio now!',
+		'Software Engineer @ SaaS Labs. Passionate about creating innovative solutions for complex problems. Explore my portfolio now!',
 	applicationName: 'Anubhav Ajmera',
 	authors: [{ name: 'Anubhav Ajmera', url: 'https://www.anubhavajmera.com' }],
 	keywords: [
-		'next.js',
-		'react',
 		'anubhav ajmera',
 		'ajmera',
 		'anubhavajmera',
-		'styled-components',
+		'nextjs',
+		'react',
+		'webdesign',
 		'tailwindcss',
 		'tailwind',
 		'html',
 		'css',
 		'javascript',
 		'typescript',
-		'semanticui',
+		'figma',
+		'uidesign',
+		'product',
+		'product management',
+		'product-management',
+		'uxdesign',
 	],
 	referrer: 'origin',
 	creator: 'Anubhav Ajmera',
@@ -41,7 +46,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		type: 'website',
 		description:
-			'Software Engineer from India specializing in web development. Passionate about creating innovative solutions for complex problems. Explore my portfolio now!',
+			'Software Engineer @ SaaS Labs. Passionate about creating innovative solutions for complex problems. Explore my portfolio now!',
 		title: 'Anubhav Ajmera - Software Engineer @ SaaS Labs | Product Enthusiast',
 		locale: 'en_US',
 		siteName: 'Anubhav Ajmera',
@@ -71,7 +76,7 @@ export const metadata: Metadata = {
 		creator: '@anubhavajmera',
 		title: 'Anubhav Ajmera - Software Engineer @ SaaS Labs | Product Enthusiast',
 		description:
-			'Software Engineer from India specializing in web development. Passionate about creating innovative solutions for complex problems. Explore my portfolio now!',
+			'Software Engineer @ SaaS Labs. Passionate about creating innovative solutions for complex problems. Explore my portfolio now!',
 		images: ['/assets/anubhavajmera.jpg'],
 	},
 	icons: {
