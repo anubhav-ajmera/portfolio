@@ -26,7 +26,12 @@ const Intro = () => {
 
 				<div className='flex-wrap flex font-medium'>
 					<p className='mb-2'>Software Engineer @ SaaS Labs | Product Enthusiast</p>
-					<p>Helping businesses and SMEs build great products and grow digitally.</p>
+					<p>
+						Helping businesses and SMEs build great products and grow digitally. With a Mechanical Engineering
+						background, {"I've"} ventured into web development and design, collaborating with clients across various
+						industries. My mission is to empower businesses with cutting-edge solutions, from web development to SEO,
+						all while offering entrepreneurial insights. {"Let's"} work together to make your digital dreams a reality! 🚀
+					</p>
 				</div>
 
 				<div className='flex flex-row gap-3 my-4'>
