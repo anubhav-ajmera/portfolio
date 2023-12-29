@@ -1,8 +1,7 @@
 'use client'
 
-import { usePathname, useSearchParams } from 'next/navigation'
 import Script from 'next/script'
-import { useEffect } from 'react'
+
 
 // const pageview = (GA_MEASUREMENT_ID: string, url: string) => {
 // 	if (window !== null) {

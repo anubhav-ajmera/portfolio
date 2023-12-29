@@ -5,7 +5,6 @@ import Button from '../Button'
 import clsx from 'clsx'
 import { useRouter } from 'next/navigation'
 import SocialButtons from '../SocialButtons'
-import { SCIcon } from '@/Icons'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -13,6 +12,15 @@ const Footer = () => {
 	const router = useRouter()
 	const [currentFocussed, setCurrentFocussed] = useState<string>('')
 	const NAVBAR_ITEMS = [
+		{
+			key: 'home',
+			title: 'Home',
+			route: '/',
+			gradient: true,
+			gFrom: 'from-red-500',
+			gTo: 'to-orange-500',
+			underline: 'hocus:decoration-blue-500',
+		},
 		{
 			key: 'about',
 			title: 'About',

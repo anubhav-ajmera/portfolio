@@ -12,7 +12,6 @@ import Button from '../Button';
 import Text from '../Text';
 import { useIsMounted } from '@/hooks/isMounted';
 import Image from 'next/image';
-import { SCIcon } from '@/Icons';
 import Link from 'next/link';
 import Loader from '../Loader';
 
@@ -23,6 +22,15 @@ const Navbar = () => {
 	const { isDark, toggleTheme } = useTheme();
 
 	const NAVBAR_ITEMS = [
+		{
+			key: 'home',
+			title: 'Home',
+			route: '/',
+			gradient: true,
+			gFrom: 'from-red-500',
+			gTo: 'to-orange-500',
+			underline: 'hocus:decoration-blue-500',
+		},
 		{
 			key: 'about',
 			title: 'About',
@@ -47,7 +55,7 @@ const Navbar = () => {
 			gTo: 'to-[#7a4cbb]',
 			active: pathname?.startsWith('/blog'),
 		},
-	];
+	]
 
 	return (
 		<nav

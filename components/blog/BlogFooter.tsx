@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import Button from '../Button';
-import { EditIcon, ShareIcon } from '@/Icons';
+import { ShareIcon } from '@/Icons';
 import Text from '../Text';
 // import Reactions from './Reactions';
 import { Blog } from '@/.contentlayer/generated';
