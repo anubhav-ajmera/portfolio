@@ -93,7 +93,7 @@ const AllProjects = () => {
 								{project.description}
 							</Text>
 
-							<div className='flex gap-2 items-center'>
+							<div className='flex flex-wrap gap-2 items-center'>
 								{project.stack &&
 									project.stack.length > 0 &&
 									project.stack.map((skill) => (

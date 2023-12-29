@@ -1,12 +1,12 @@
 'use client'
 
-import { ChevronUp } from '@/Icons';
-import { useIsMounted } from '@/hooks/isMounted';
-import { useState, useEffect, useCallback } from 'react';
-import Button from '../Button';
-import Text from '../Text';
-import clsx from 'clsx';
-import { useTheme } from '@/providers/theme-provider';
+import { ChevronUp } from '@/Icons'
+import { useIsMounted } from '@/hooks/isMounted'
+import { useState, useEffect, useCallback } from 'react'
+import Button from '../Button'
+import Text from '../Text'
+import clsx from 'clsx'
+import { useTheme } from '@/providers/theme-provider'
 
 export const scrollToTop = () => {
 	try {
@@ -20,11 +20,11 @@ export const scrollToTop = () => {
 	}
 }
 
-const SCROLL_OFFSET = 287;
+const SCROLL_OFFSET = 287
 export const BackToTop = () => {
-	const { isDark } = useTheme();
-	const [showButton, setShowButton] = useState(false);
-	const isMounted = useIsMounted();
+	const { isDark } = useTheme()
+	const [showButton, setShowButton] = useState(false)
+	const isMounted = useIsMounted()
 
 	const checkScrollTop = useCallback(() => {
 		if (!isMounted) return
@@ -37,7 +37,7 @@ export const BackToTop = () => {
 		} catch (e) {
 			/* empty */
 		}
-	}, [isMounted]);
+	}, [isMounted])
 
 	useEffect(() => {
 		if (!isMounted) return
@@ -47,7 +47,7 @@ export const BackToTop = () => {
 		return () => {
 			window.removeEventListener('scroll', checkScrollTop)
 		}
-	}, [isMounted, checkScrollTop]);
+	}, [isMounted, checkScrollTop])
 
 	return (
 		<Button
