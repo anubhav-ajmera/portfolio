@@ -1,15 +1,15 @@
-'use client';
+'use client'
 
-import Greeting from '../Greeting';
-import Button from '../Button';
-import { ProfileIcon } from '@/Icons';
-import Text from '../Text';
-import SocialButtons from '../SocialButtons';
-import { useRouter } from 'next/navigation';
-import AnimatedImage from '../AnimatedImage';
+import Greeting from '../Greeting'
+import Button from '../Button'
+import { ProfileIcon } from '@/Icons'
+import Text from '../Text'
+import SocialButtons from '../SocialButtons'
+import { useRouter } from 'next/navigation'
+import AnimatedImage from '../AnimatedImage'
 
 const Intro = () => {
-	const router = useRouter();
+	const router = useRouter()
 	return (
 		<section className='flex flex-col items-start laptop:flex-row-reverse lpatop:items-center gap-5'>
 			<section>
@@ -30,7 +30,8 @@ const Intro = () => {
 						Helping businesses and SMEs build great products and grow digitally. With a Mechanical Engineering
 						background, {"I've"} ventured into web development and design, collaborating with clients across various
 						industries. My mission is to empower businesses with cutting-edge solutions, from web development to SEO,
-						all while offering entrepreneurial insights. {"Let's"} work together to make your digital dreams a reality! 🚀
+						all while offering entrepreneurial insights. {"Let's"} work together to make your digital dreams a reality!
+						🚀
 					</p>
 				</div>
 
